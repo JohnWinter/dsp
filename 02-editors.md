@@ -61,6 +61,6 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> PyCharm. I found it the most intuitive. Within seconds I was able to def a function in a file and run it on the console. I really like the "spell check"! Not sure how to use the debug mode yet. Command 4 runs a script. Command d doubles a line. Learning the shortcuts reminds me of my early days as a budding spreadsheet jocky. 
 
 ---
