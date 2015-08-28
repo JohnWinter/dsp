@@ -12,8 +12,18 @@ these in a couple of hours.
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
-> > pushd <destination folder> : saves current folder and moves me to destination, 
-popd takes me to folder saved after i executed pushd.
+> > 
+1. pushd <destination folder> : saves current folder and moves me to destination, 
+2. popd takes me to folder saved after i executed pushd.
+ 
+3. pwd - indicates present working directory. 
+4. cd [directory within pwd] - move to target directory []
+5. cd .. - move up one directory 
+6. rm [file] - removes file
+7. [function] *[e.g. ".txt"] - maps prior function to all files that have the indicated text snippet 
+8. cp [old name] [new name] - copy file 
+9. mv [old place] [new place] - move file
+10. touch [new empty file name] - create empty file
 
 ---
 
