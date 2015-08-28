@@ -39,6 +39,8 @@ Did you install Python 2 or 3? Why? How can you check the version of Python inst
 
 >> Python 2 - not sure - i did it a few months ago
 
+typing python in terminal starts a python window that has the version number on the banner. 
+
 ---
 
 
