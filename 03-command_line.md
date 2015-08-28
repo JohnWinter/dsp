@@ -15,7 +15,6 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 > > 
 1. pushd <destination folder> : saves current folder and moves me to destination, 
 2. popd takes me to folder saved after i executed pushd.
- 
 3. pwd - indicates present working directory. 
 4. cd [directory within pwd] - move to target directory []
 5. cd .. - move up one directory 
