@@ -9,6 +9,9 @@ def donuts(count):
     passed in. However, if the count is 10 or more, then use the word
     'many' instead of the actual count.
 
+
+
+
     >>> donuts(4)
     'Number of donuts: 4'
     >>> donuts(9)
@@ -18,6 +21,11 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
+    if count>9:
+        return "Number of donuts: many"
+    else:
+        return "Number of donuts:"+ " "+str(count)
+
     raise NotImplementedError
 
 
@@ -37,6 +45,10 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
+    if len(s)>1:
+        return s[0:2]+s[-2:]
+    else: return ""
+
     raise NotImplementedError
 
 
@@ -56,6 +68,10 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
+    x= s[0]
+    s=s[0]+s[1:].replace(x,"*")
+
+    return s
     raise NotImplementedError
 
 
@@ -74,6 +90,10 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
+
+    c = a.replace(a[0:2],b[0:2])
+    d = b.replace(b[0:2],a[0:2])
+    return c+" "+d
     raise NotImplementedError
 
 
@@ -91,6 +111,12 @@ def verbing(s):
     >>> verbing('do')
     'do'
     """
+    if len(s)>2:
+        if "ing" in s:
+            return s+"ly"
+        return s+"ing"
+    else:
+        return s
     raise NotImplementedError
 
 
@@ -111,6 +137,15 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
+    x= s.find("not")
+    if "bad" in s[x:]:
+        t= s.replace(s[x:],'good')
+    else:
+        t=s
+    if '!' in s:
+        t=t+"!"
+
+    return t
     raise NotImplementedError
 
 
@@ -130,4 +165,13 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
+    x= len(a)-len(a)//2
+    y= len(b)-len(b)//2
+    a1= a[0:x]
+    a2= a[x:]
+    b1= b[0:y]
+    b2= b[y:]
+    t=a1+b1+a2+b2
+    return t
+
     raise NotImplementedError

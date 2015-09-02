@@ -12,7 +12,7 @@ For quick and easy interactive practice with Python, many people enjoy [Codecade
 
 How are Python lists and tuples similar and different? Which will work as keys in dictionaries? Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Lists are contained in [] while tuples are contained in (). Lists are mutable so they can be updated with new entries. This property lets them work for dictionaries. 
 
 ---
 
@@ -20,7 +20,9 @@ How are Python lists and tuples similar and different? Which will work as keys i
 
 How are Python lists and sets similar and different? Give examples of using both. How does performance compare between lists and sets for finding an element. Why?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Lists maintain order and allow for multiples of the same value. Sets do not keep order and they only allow for unique items. Also all set items must be hashable. 
+>> Set could be used for reviewing all the unique words used in a document. List could be used for keeping a list of phone numbers dialed in a time frame since there will likely be repeats and order of the calls may be of interest. 
+>> Sets are faster because all items are hashed, i.e. computer knows exactly where to find them with hash id vs. matching against all items in list.   
 
 ---
 
@@ -28,7 +30,8 @@ How are Python lists and sets similar and different? Give examples of using both
 
 Describe Python's `lambda`. What is it, and what is it used for? Give at least one example, including an example of using a `lambda` in the `key` argument to `sorted`.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Lambda allows one to create a function without having to define it. A shortcut. 
+>> Example: $ sorted("Sort by the last letter of these strings".split(), key = lambda x: x[-1])
 
 ---
 
@@ -36,7 +39,14 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> List comprehensions allow one to apply a function to each element in a list, like using map or extract only elements that meet certain criteria, like filter.
+>> Map vs comprehension 
+>>>squares = [x**2 for x in range(1,11)] 
+>>>squares = list(map(lambda x:x**2, range(1,11)))
+>> Filter vs comprehension 
+>>>filter_squares = [num for num in squares if  num<71 and num>29]
+>>>filter_squares = filter(lambda x: x>29 and x<71,squares)
+
 
 ---
 
@@ -51,15 +61,17 @@ date_start = '01-02-2013'
 date_stop = '07-28-2015'
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> 937
+
+
 
 b.  
 ```
 date_start = '12312013'  
 date_stop = '05282015'  
 ```
+>> 513
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
 
 c.  
 ```
@@ -67,7 +79,7 @@ date_start = '15-Jan-1994'
 date_stop = '14-Jul-2015'  
 ```
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE  
+>> 7850 
 
 Place code in this file: [q5_datetime.py](python/q5_datetime.py)
 
