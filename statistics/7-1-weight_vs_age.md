@@ -4,7 +4,7 @@ Problem: Plot percentiles of birth weight versus mother's age, caculate the corr
 
 Solved by following the coding example in ch 7 closely. Consulted the solution for help plotting the percentiles. The plots show the relationship
 of the variables better by reducing noise than a raw scatter plot would because, depending on the bin size, it reduces variances through averaging. 
-To calculate 
+
 
 Solution: After plotting the percentiles we see a small linear correlation for age and weight between ages 18 and 37. More than anything this tells
 me that my wife and I need to get started early enough to avoid complications that are likely to be part of the weight drop after 37. The Pearson and 
